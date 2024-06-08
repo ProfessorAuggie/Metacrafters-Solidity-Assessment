@@ -1,6 +1,6 @@
 # MyToken Smart Contract
 
-This repository contains a simple ERC-20-like smart contract implemented in Solidity. The contract includes basic functionalities such as minting and burning tokens.
+This repository contains a simple smart contract implemented in Solidity. The contract includes basic functionalities such as minting and burning tokens.
 
 ## Contract Details
 
