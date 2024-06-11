@@ -45,6 +45,9 @@ Contributions to improve the contract or add new features are welcome! To contri
 4. Push your changes to the branch (`git push origin feature/new-feature`).
 5. Open a pull request.
 
+## Creator
+- [Vaibhav Kushwaha](https://www.linkedin.com/in/professorauggie)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
