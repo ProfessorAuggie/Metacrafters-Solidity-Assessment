@@ -1,28 +1,50 @@
-# MyToken Smart Contract
+# Solidity Token Contract
 
-This repository contains a simple smart contract implemented in Solidity. The contract includes basic functionalities such as minting and burning tokens.
+This repository contains a Solidity contract for creating a basic token named "Haadi" with the symbol "Auggie". The contract includes functions for minting new tokens and burning existing ones, along with appropriate safety checks.
 
 ## Contract Details
 
 - **Token Name**: Haadi
 - **Token Symbol**: Auggie
-- **Total Supply**: Variable, initialized to 0
+- **Total Supply**: Initially set to 0
 
-## Features
+## Contract Structure
 
-1. **Public Variables**
-    - `name`: Stores the name of the token.
-    - `symbol`: Stores the abbreviated name of the token.
-    - `totalSupply`: Stores the total supply of the token.
+The contract consists of the following components:
 
-2. **Mapping**
-    - `balances`: Maps addresses to their respective token balances.
+1. **Token Details**: Public variables storing the name, symbol, and total supply of the token.
+2. **Mapping of Balances**: A mapping associating addresses with their token balances.
+3. **Mint Function**: A function for minting new tokens and increasing balances.
+4. **Burn Function**: A function for burning existing tokens and decreasing balances, with safety checks.
 
-3. **Functions**
-    - `mint(address _address, uint256 _value)`: Mints new tokens and assigns them to the specified address. This function increases the total supply and the balance of the given address.
-    - `burn(address _address, uint256 _value)`: Burns tokens from the specified address. This function decreases the total supply and the balance of the given address. It checks if the address has enough balance before burning.
-## Creator
-- [Vaibhav Kushwaha](https://www.linkedin.com/in/professorauggie)
+## Usage
+
+To use this contract, you can deploy it to an Ethereum-compatible blockchain network. Once deployed, you can interact with it using Ethereum wallets or through smart contract interactions.
+
+### Deployment
+
+- Deploy the contract to an Ethereum network using tools like Remix, Truffle, or Hardhat.
+- Specify the initial parameters such as the token name, symbol, and initial supply during deployment.
+
+### Interacting with the Contract
+
+Once deployed, you can interact with the contract in the following ways:
+
+- **Minting Tokens**: Call the `mint` function with the desired recipient address and token value to create new tokens.
+- **Burning Tokens**: Call the `burn` function with the sender's address and token value to destroy existing tokens.
+
+Ensure that the sender's balance is sufficient before calling the `burn` function to avoid errors.
+
+## Contributing
+
+Contributions to improve the contract or add new features are welcome! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push your changes to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE).
