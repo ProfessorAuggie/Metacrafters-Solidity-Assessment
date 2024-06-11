@@ -19,12 +19,11 @@ The contract consists of the following components:
 
 ## Usage
 
-To use this contract, you can deploy it to an Ethereum-compatible blockchain network. Once deployed, you can interact with it using Ethereum wallets or through smart contract interactions.
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-### Deployment
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., token.sol). Copy and paste the following code into the file
 
-- Deploy the contract to an Ethereum network using tools like Remix, Truffle, or Hardhat.
-- Specify the initial parameters such as the token name, symbol, and initial supply during deployment.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.18" (or another compatible version)
 
 ### Interacting with the Contract
 
